@@ -1,0 +1,23 @@
+/* Navbar button styling */
+
+.btn-success {
+    background-color: #00ff88; /* Blue background color */
+    border: none;
+    border-radius: 5px; /* Adjusted border radius for a smaller button */
+    padding: 8px 16px; /* Adjusted padding for a smaller button */
+    font-size: 14px; /* Reduced font size */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-success:disabled {
+    background-color: #03ce6fda; /* Ensure button color stays the same when disabled */
+    cursor: not-allowed; /* Show not-allowed cursor when disabled */
+}
+
+/* Responsive design adjustments for smaller screens */
+@media (max-width: 576px) {
+    .btn-success {
+        padding: 6px 12px; /* Further reduce padding for smaller screens */
+        font-size: 12px; /* Further reduce font size for smaller screens */
+    }
+}
